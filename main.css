@@ -1,0 +1,30 @@
+section {
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+  max-width: 32em;
+  margin: 1em auto;
+  display: flex;
+  justify-content: space-between;
+}
+
+label {
+  display: block;
+  width: 7em;
+}
+
+input {
+  width: calc(100% - 10em);
+}
+
+select {
+  display: block;
+  width: 100%;
+}
+
+.select {
+  width: 30%;
+}
+
+.display {
+  text-align: right;
+  width: 3em;
+}

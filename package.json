@@ -1,0 +1,19 @@
+{
+  "name": "blackmagic-electron",
+  "version": "1.0.0",
+  "description": "An electron app to control the blackmagic arduino shield",
+  "main": "main.js",
+  "scripts": {
+    "dev": "electron .",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "electron": "^11.1.0",
+    "serialport": "^9.0.3"
+  },
+  "devDependencies": {
+    "electron-rebuild": "^2.3.4"
+  }
+}
