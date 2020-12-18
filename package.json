@@ -5,6 +5,7 @@
   "main": "main.js",
   "scripts": {
     "dev": "electron .",
+    "rebuild": "electron-rebuild",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
