@@ -11,6 +11,8 @@ const FUNC_SHUTTER = 4;
 const FUNC_APERTURE = 5;
 const FUNC_FOCUS = 6;
 const FUNC_ZOOM = 7;
+const FUNC_OVERLAYS = 8;
+const FUNC_ZEBRAS = 9;
 
 const portSelect = document.getElementById('port-select');
 
@@ -72,6 +74,18 @@ videoModes.forEach((m, i) => {
 modeSelect.onchange = (evt) => {
   const val = parseInt(evt.target.value);
   sendCommand(FUNC_MODE, val);
+};
+
+const overlays = document.getElementById('overlays');
+overlays.onchange = (evt) => {
+  const val = evt.target.checked ? 1 : 0;
+  sendCommand(FUNC_OVERLAYS, val);
+};
+
+const zebras = document.getElementById('zebras');
+zebras.onchange = (evt) => {
+  const val = evt.target.checked ? 1 : 0;
+  sendCommand(FUNC_ZEBRAS, val);
 };
 
 const shutterVals = [50, 60, 75, 90, 100, 120, 150, 180, 250, 360, 500, 725, 1000, 1450, 2000];

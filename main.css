@@ -7,11 +7,14 @@ section {
 }
 
 label {
-  display: block;
   width: 7em;
 }
 
-input {
+.checkbox {
+  width: 50%;
+}
+
+.slider {
   width: calc(100% - 10em);
 }
 
